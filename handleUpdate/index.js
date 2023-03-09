@@ -5,21 +5,21 @@ const schema = new dynamoose.Schema({
   "name": String,
 });
 
-const friendModel = dynamoose.model('lab', schema);
+const peopleModel = dynamoose.model('lab', schema);
 
 exports.handler = async(event) => {
     
   let id = event?.pathParameters?.id;
   let parsedData = JSON.parse(event.body);
   
-  let updatedName = parsedData.name;
-  console.log(updatedName);
+  let newName = parsedData.name;
+  console.log(newName);
   
   let response = {statusCode: null, body: null};
   
   try{
       
-      let results = await friendModel.update({"id": id, "name": updatedName});
+      let results = await peopleModel.update({"id": id, "name": newName});
       console.log(results);
       
       response.body = JSON.stringify(results);
