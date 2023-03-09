@@ -10,7 +10,7 @@ Build a dynamo table and use CRUD functionality properly on the table through AP
 
 ### Links and Resources
 
-- [Deployed Site but it is saying forbidden](https://buksiyork5.execute-api.us-east-1.amazonaws.com/people)
+- [Deployed Site but it is saying forbidden](https://buksiyork5.execute-api.us-east-1.amazonaws.com/people18/people)
 
 - I watched back Class Lecture
 - [dynamoose docs](https://dynamoosejs.com/getting_started/Introduction)
